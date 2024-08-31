@@ -1,0 +1,42 @@
+/* .recipeCard img {
+    height: 300px;
+    object-fit: cover;
+    background-position: center;
+   
+} */
+
+.recipeCard {
+    background-color: rgba(230, 218, 218, 0.412); /* Light pink background color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow */
+    padding: 10px; /* Inner padding */
+    transition: transform 0.3s ease,box-shadow 0.3s ease;  /* Smooth transition for scaling effect */
+}
+
+.recipeCard img {
+    height: 300px;
+    object-fit: cover;
+    background-position: center;
+    width: 100%; /* Full width of the card */
+    border-radius: 10px; /* Rounded corners to match the card */
+}
+
+/* Hover effect to enlarge the card */
+.recipeCard:hover {
+    transform: scale(1.05); /* Scale up the card slightly */
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.466);
+}
+
+.grayButton {
+    background-color: rgb(74, 134, 14);
+    border-color: gray;
+    color: white;
+}
+
+.grayButton:hover, 
+.grayButton:focus {
+    background-color: darkgray;
+    border-color: darkgray;
+    color: white;
+}
